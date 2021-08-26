@@ -17,7 +17,7 @@ const Logo = styled.h1`
   }
 `;
 
-const HeaderStyled = styled.header`
+const HeaderStyles = styled.header`
   .bar {
     border-bottom: 10px solid var(--black, black);
     display: grid;
@@ -35,16 +35,16 @@ const HeaderStyled = styled.header`
 
 export default function Header() {
   return (
-    <HeaderStyled>
+    <HeaderStyles>
       <div className="bar">
         <Logo>
           <Link href="/">Sick fits</Link>
         </Logo>
+        <Nav />
       </div>
       <div className="sub-bar">
         <p>Search</p>
       </div>
-      <Nav />
-    </HeaderStyled>
+    </HeaderStyles>
   );
 }
